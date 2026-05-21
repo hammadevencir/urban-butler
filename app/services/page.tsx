@@ -1,9 +1,11 @@
-import React from 'react'
+import ServiceCatalogSection from "@/components/services/service-catalog-section";
+import ServicesHeroSection from "@/components/services/services-hero-section";
 
-const ServicesPage = () => {
+export default function ServicesPage() {
   return (
-    <div>ServicesPage</div>
-  )
+    <div className="flex w-full flex-col">
+      <ServicesHeroSection />
+      <ServiceCatalogSection />
+    </div>
+  );
 }
-
-export default ServicesPage
