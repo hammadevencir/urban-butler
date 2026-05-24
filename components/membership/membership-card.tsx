@@ -12,48 +12,48 @@ type MembershipCardProps = {
 
 export function MembershipCard({ plan }: MembershipCardProps) {
   return (
-    <article className="relative flex h-full flex-col overflow-hidden rounded-xl border border-[#E1D2BF] bg-[#FDF8F3] p-6 sm:p-7 xl:p-8">
+    <article className="relative flex h-full flex-col overflow-hidden rounded-b-lg border border-[#E1D2BF] p-6">
       {"badge" in plan && plan.badge ? (
-        <div className="pointer-events-none absolute right-0 top-0 size-28 overflow-hidden">
-          <span className="absolute right-[-34px] top-[22px] w-[140px] rotate-45 bg-primary py-1.5 text-center text-[10px] font-semibold uppercase tracking-wide text-white">
+        <div className="pointer-events-none  absolute right-0 top-0 size-28 2xl:size-32 overflow-hidden">
+          <span className="absolute right-[-34px] 2xl:right-[-38px] top-[22px] 2xl:top-[26px] w-[140px] 2xl:w-[171px] rotate-45 bg-primary py-1.5 text-center text-xs 2xl:text-base 2xl:pl-3 font-semibold tracking-wide text-white">
             {plan.badge}
           </span>
         </div>
       ) : null}
 
-      <div>
+      <div className="flex flex-col gap-1 items-center">
         <h3 className="text-lg font-semibold text-primary xl:text-xl">
-          {plan.number}. {plan.name}
+          {plan.number}. <span className="text-[#1D1D1D]">{plan.name}</span>
         </h3>
         <p className="mt-1 text-sm text-[#4A4A4A] sm:text-base">
           {plan.description}
         </p>
       </div>
 
-      <ul className="mt-6 flex flex-1 flex-col gap-3">
+      <ul className="mt-4 flex flex-1 flex-col gap-3">
         {plan.features.map((feature) => (
-          <li key={feature} className="flex items-start gap-3">
+          <li key={feature} className="flex items-start gap-2">
             <Image
               src="/tick-circle.svg"
               alt=""
-              width={20}
-              height={20}
+              width={24}
+              height={24}
               aria-hidden
               className="mt-0.5 shrink-0"
             />
-            <span className="text-sm leading-relaxed text-[#4A4A4A] sm:text-base">
+            <span className="text-sm text-[#545454] font-medium sm:text-base">
               {feature}
             </span>
           </li>
         ))}
       </ul>
 
-      <div className="mt-8">
-        <p className="text-[#1E1E1E]">
+      <div className="mt-8 flex flex-col items-center">
+        <p className="text-[#1D1D1D]">
           <span className="text-3xl font-semibold sm:text-4xl">
             ${plan.price}
           </span>
-          <span className="text-base text-[#4A4A4A] sm:text-lg">/Month</span>
+          <span className="text-base text-[#545454] sm:text-xl font-semibold">/Month</span>
         </p>
 
         <Button
