@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   return (
     <section className="overflow-hidden bg-[#FDF8F2] border-b border-[#E1D2BF]">
-      <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] 2xl:grid-cols-[820px_1fr] xl:min-h-[638px] xl:max-h-[638px] h-full">
-        <div className="flex flex-col justify-center px-6 py-14 sm:px-10 sm:py-16 lg:px-14 lg:py-20 xl:px-20 xl:pl-28">
+      <div className="grid md:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] 2xl:grid-cols-[820px_1fr] xl:min-h-[638px] xl:max-h-[638px] h-full">
+        <div className="flex flex-col justify-center px-6 py-14 sm:px-10 sm:py-16 lg:px-14 lg:py-16 3xl:px-20 3xl:pl-28">
           <p className="text-xs font-medium uppercase text-primary sm:text-sm lg:text-base xl:text-lg 2xl:text-xl">
             A Private Concierge
           </p>

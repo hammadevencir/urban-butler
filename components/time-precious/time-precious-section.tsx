@@ -55,31 +55,33 @@ function FeatureItem({
 const TimePreciousSection = () => {
   return (
     <section className="bg-[#FDF8F2] border-b border-[#E1D2BF]">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 sm:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(260px,320px)_minmax(0,1fr)] lg:gap-8 lg:py-11.25 xl:max-w-[1820px] xl:grid-cols-[minmax(0,1fr)_360px_minmax(0,1fr)] xl:gap-12 xl:px-16">
-        <div className="max-w-lg lg:max-w-none">
-          <p className="text-xs font-medium uppercase text-primary sm:text-sm lg:text-base xl:text-lg">
-            Your Time Is Precious
-          </p>
+      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 sm:px-10 md:grid-cols-2 md:gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(260px,320px)_minmax(0,1fr)] lg:py-11.25 xl:max-w-[1820px] 2xl:grid-cols-[minmax(0,1fr)_360px_minmax(0,1fr)] 2xl:gap-12 2xl:px-16">
+        <div className="flex flex-col gap-8 md:gap-10 lg:contents">
+          <div className="max-w-lg lg:max-w-none">
+            <p className="text-xs font-medium uppercase text-primary sm:text-sm lg:text-base xl:text-lg">
+              Your Time Is Precious
+            </p>
 
-          <h2 className="mt-4 font-heading font-medium text-[2rem] leading-[1.15] text-[#1E1E1E] sm:text-4xl">
-            Your time is not for coordination.
-          </h2>
+            <h2 className="mt-4 font-heading font-medium text-[2rem] leading-[1.15] text-[#1E1E1E] sm:text-4xl">
+              Your time is not for coordination.
+            </h2>
 
-          <p className="mt-5 max-w-md text-base text-[#4A4A4A] sm:text-lg lg:max-w-none xl:text-2xl">
-            From everyday needs to elevated experiences, everything is handled
-            with care.
-          </p>
+            <p className="mt-5 max-w-md text-base text-[#4A4A4A] sm:text-lg lg:max-w-none xl:text-2xl">
+              From everyday needs to elevated experiences, everything is handled
+              with care.
+            </p>
+          </div>
+
+          <Image
+            src="/precious-time.png"
+            alt="Man in a suit overlooking the city skyline from a high-rise balcony"
+            width={400}
+            height={252}
+            className="w-full rounded-sm lg:w-auto"
+          />
         </div>
 
-        <Image
-          src="/precious-time.png"
-          alt="Man in a suit overlooking the city skyline from a high-rise balcony"
-          width={400}
-          height={252}
-          className="rounded-sm"
-        />
-
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-5 lg:gap-y-12 xl:gap-x-8">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 md:col-start-2 md:row-start-1 md:grid-cols-1 lg:col-start-auto lg:row-start-auto lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12 xl:gap-x-8">
           {features.map((feature) => (
             <FeatureItem
               key={feature.title}

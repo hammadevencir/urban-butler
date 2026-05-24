@@ -1,6 +1,7 @@
 import {
   CallRinging01Icon,
   ClockCheckIcon,
+  CustomerServiceIcon,
   SecurityCheckIcon,
   UserGroupIcon,
 } from "@hugeicons/core-free-icons";
@@ -23,7 +24,7 @@ export const whyUrbanButlerFeatures = [
     description: "Your privacy is our priority.",
   },
   {
-    icon: CallRinging01Icon,
+    icon: CustomerServiceIcon,
     title: "Available 24/7",
     description: "Day or night we're here.",
   },

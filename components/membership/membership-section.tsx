@@ -4,7 +4,7 @@ import { membershipPlans } from "./membership-data";
 const MembershipSection = () => {
   return (
     <section className="bg-[#FDF8F2] border-b border-[#E1D2BF]">
-      <div className="mx-auto max-w-7xl px-6 py-16 sm:px-10 lg:py-20 xl:max-w-[1820px] xl:px-16 xl:py-24">
+      <div className="mx-auto max-w-7xl px-6 py-10 sm:px-10 xl:max-w-[1820px] 3xl:px-16 xl:py-11.25">
         <div className="mx-auto text-center">
           <p className="text-xs font-semibold uppercase text-primary sm:text-sm lg:text-base xl:text-lg">
             Membership
@@ -19,7 +19,7 @@ const MembershipSection = () => {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 lg:mt-14 lg:grid-cols-3 lg:gap-6 xl:gap-8 xl:max-w-[1660px] xl:px-[100px]">
+        <div className="mt-12 grid grid-cols-1 gap-6 lg:mt-14 lg:grid-cols-3 lg:gap-6 xl:gap-8 2xl:max-w-[1660px] 3xl:px-[100px]">
           {membershipPlans.map((plan) => (
             <MembershipCard key={plan.name} plan={plan} />
           ))}

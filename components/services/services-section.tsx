@@ -14,7 +14,7 @@ const ServicesSection = () => {
           </h2>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-6 lg:mt-12 lg:grid-cols-3 xl:grid-cols-5 xl:gap-6">
+        <div className="mt-10 xl:grid flex flex-wrap justify-center gap-8 sm:grid-cols-2 sm:gap-6 lg:mt-12 lg:grid-cols-3 xl:grid-cols-5 xl:gap-6">
           {services.map((service) => (
             <ServiceCard key={service.title} service={service} />
           ))}
