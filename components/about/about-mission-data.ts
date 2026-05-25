@@ -5,7 +5,7 @@ import {
   SecurityCheckIcon,
   UserCircleIcon,
 } from "@hugeicons/core-free-icons";
-import type { IconSvgObject } from "@hugeicons/react";
+import type { IconSvgElement } from "@hugeicons/react";
 
 export const aboutMissionValues = [
   {
@@ -35,7 +35,7 @@ export const aboutMissionValues = [
     description: "Local expertise. Global access. Anywhere, anytime.",
   },
 ] as const satisfies ReadonlyArray<{
-  icon: IconSvgObject;
+  icon: IconSvgElement;
   title: string;
   description: string;
 }>;

@@ -5,7 +5,7 @@ import {
   ServingFoodIcon,
   UserGroupIcon,
 } from "@hugeicons/core-free-icons";
-import type { IconSvgObject } from "@hugeicons/react";
+import type { IconSvgElement } from "@hugeicons/react";
 
 export const forHotelsBenefitsFeatures = [
   {
@@ -39,7 +39,7 @@ export const forHotelsBenefitsFeatures = [
       "We handle everything 24/7. No staffing, no training, no overhead.",
   },
 ] as const satisfies ReadonlyArray<{
-  icon: IconSvgObject;
+  icon: IconSvgElement;
   title: string;
   description: string;
 }>;

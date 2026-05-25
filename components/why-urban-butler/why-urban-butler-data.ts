@@ -5,7 +5,7 @@ import {
   SecurityCheckIcon,
   UserGroupIcon,
 } from "@hugeicons/core-free-icons";
-import type { IconSvgObject } from "@hugeicons/react";
+import type { IconSvgElement } from "@hugeicons/react";
 
 export const whyUrbanButlerFeatures = [
   {
@@ -29,7 +29,7 @@ export const whyUrbanButlerFeatures = [
     description: "Day or night we're here.",
   },
 ] as const satisfies ReadonlyArray<{
-  icon: IconSvgObject;
+  icon: IconSvgElement;
   title: string;
   description: string;
 }>;

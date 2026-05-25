@@ -4,7 +4,7 @@ import {
   SecurityCheckIcon,
   UserCircleIcon,
 } from "@hugeicons/core-free-icons";
-import type { IconSvgObject } from "@hugeicons/react";
+import type { IconSvgElement } from "@hugeicons/react";
 
 export const forBuildingsAmenityFeatures = [
   {
@@ -32,7 +32,7 @@ export const forBuildingsAmenityFeatures = [
       "We handle everything—so your team doesn't have to add headcount or complexity.",
   },
 ] as const satisfies ReadonlyArray<{
-  icon: IconSvgObject;
+  icon: IconSvgElement;
   title: string;
   description: string;
 }>;

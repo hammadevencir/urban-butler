@@ -7,11 +7,11 @@ import {
   WhatsappIcon,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import type { IconSvgObject } from "@hugeicons/react";
+import type { IconSvgElement } from "@hugeicons/react";
 
 import type { ContactInfoItem } from "./contact-message-data";
 
-const contactIcons: Record<ContactInfoItem["label"], IconSvgObject> = {
+const contactIcons: Record<ContactInfoItem["label"], IconSvgElement> = {
   "Call Us": CallRinging01Icon,
   "Email Us": Mail01Icon,
   WhatsApp: WhatsappIcon,

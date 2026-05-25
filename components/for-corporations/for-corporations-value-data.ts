@@ -5,7 +5,7 @@ import {
   StarIcon,
   UserGroupIcon,
 } from "@hugeicons/core-free-icons";
-import type { IconSvgObject } from "@hugeicons/react";
+import type { IconSvgElement } from "@hugeicons/react";
 
 export const forCorporationsValueFeatures = [
   {
@@ -39,7 +39,7 @@ export const forCorporationsValueFeatures = [
       "No need to build or manage multiple vendor relationships—we handle it all.",
   },
 ] as const satisfies ReadonlyArray<{
-  icon: IconSvgObject;
+  icon: IconSvgElement;
   title: string;
   description: string;
 }>;
