@@ -13,7 +13,7 @@ export function NavLink({ href, label, isActive }: NavLinkProps) {
     <Link
       href={href}
       className={cn(
-        "group flex flex-col items-center gap-1 2xl:gap-2 text-xs md:text-sm font-medium uppercase tracking-none transition-colors 2xl:text-base",
+        "group flex flex-col items-center gap-1 2xl:gap-2 3xl:gap-4 text-xs md:text-sm font-medium uppercase tracking-none transition-colors 2xl:text-base",
         isActive ? "text-primary" : "text-[#2D2D2D] hover:text-primary/80",
       )}
     >

@@ -5,27 +5,27 @@ const ForBuildingsAmenitySection = () => {
   return (
     <section className="border-b border-[#E1D2BF] bg-[#FDF8F2]">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:px-10 lg:py-20 xl:max-w-[1820px] xl:px-16">
-        <div className="grid items-start gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-10 xl:gap-16">
-          <div className="max-w-lg">
-            <h2 className="font-heading text-[2rem] font-medium leading-[1.15] text-[#1E1E1E] sm:text-4xl">
+        <div className="grid items-start lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
+          <div className="max-w-xl">
+            <h2 className="font-heading text-[2rem] max-w-lg font-medium leading-[1.15] text-[#1E1E1E] sm:text-4xl">
               A modern amenity for the modern resident.
             </h2>
 
-            <p className="mt-5 text-base font-medium tracking-tight text-[#545454] sm:text-lg xl:text-xl">
+            <p className="mt-5 text-base font-medium tracking-tight text-[#545454] sm:text-lg xl:text-2xl">
               Today&apos;s residents expect more than just a beautiful
-              building—they expect a lifestyle that&apos;s effortless. Urban
+              building—they expect a lifestyle that&apos;s effortless. <br /> Urban
               Butler seamlessly integrates into your community, enhancing
               everyday living and elevating your brand.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-[#E1D2BF]">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:divide-x w-full lg:divide-[#E1D2BF]">
             {forBuildingsAmenityFeatures.map((feature, index) => (
               <div
                 key={feature.title}
                 className={
                   index === 0
-                    ? "lg:pr-8"
+                    ? "lg:px-8 border-l"
                     : index === forBuildingsAmenityFeatures.length - 1
                       ? "lg:pl-8"
                       : "lg:px-8"

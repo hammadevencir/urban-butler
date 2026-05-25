@@ -78,7 +78,7 @@ export function MobileNav({ pathname }: MobileNavProps) {
               asChild
               className="h-auto w-full rounded-sm px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em]"
             >
-              <Link href="/get-started">Get Started</Link>
+              <Link href="mailto:Hello@urbanbutlerconcierge.com">Get Started</Link>
             </Button>
           </SheetClose>
         </SheetFooter>

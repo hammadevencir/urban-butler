@@ -28,7 +28,7 @@ const Header = () => {
           />
         </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden 3xl:items-end gap-7 3xl:h-16 lg:flex">
           {navLinks.map((link) =>
             hasDropdown(link) ? (
               <NavDropdownLink key={link.href} pathname={pathname} />
@@ -46,9 +46,9 @@ const Header = () => {
         <div className="flex items-center gap-2">
           <Button
             asChild
-            className="hidden h-auto rounded-sm px-6 py-2.5 text-[11px] font-semibold uppercase tracking-[0.14em] lg:inline-flex"
+            className="hidden h-auto rounded-sm px-5 py-3 font-semibold uppercase lg:inline-flex"
           >
-            <Link href="/get-started">Get Started</Link>
+            <Link href="mailto:Hello@urbanbutlerconcierge.com">Get Started</Link>
           </Button>
 
           <MobileNav pathname={pathname} />

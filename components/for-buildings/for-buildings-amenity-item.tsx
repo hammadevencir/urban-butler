@@ -10,15 +10,15 @@ export function ForBuildingsAmenityItem({
   feature,
 }: ForBuildingsAmenityItemProps) {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col items-center text-center w-full min-w-[200px]">
       <HugeiconsIcon
         icon={feature.icon}
-        size={48}
-        strokeWidth={1.25}
+        size={80}
+        strokeWidth={1}
         className="text-primary"
       />
 
-      <h3 className="mt-4 text-xs font-bold uppercase text-primary sm:text-sm">
+      <h3 className="mt-4 text-xs font-bold uppercase text-primary sm:text-sm xl:text-base">
         {feature.title}
       </h3>
 
