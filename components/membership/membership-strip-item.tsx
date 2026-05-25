@@ -8,21 +8,21 @@ type MembershipStripItemCardProps = {
 
 export function MembershipStripItemCard({ item }: MembershipStripItemCardProps) {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-3">
       <Image
         src={item.icon}
         alt=""
-        width={40}
-        height={40}
+        width={56}
+        height={56}
         aria-hidden
         className="shrink-0"
       />
 
       <div>
-        <p className="text-xs font-semibold uppercase text-primary sm:text-sm">
+        <p className="text-xs font-bold uppercase text-primary sm:text-sm xl:text-base">
           {item.title}
         </p>
-        <p className="mt-1 text-xs text-primary/75 sm:text-sm">
+        <p className="mt-1 text-xs text-[#545454] sm:text-sm xl:text-base font-medium">
           {item.description}
         </p>
       </div>

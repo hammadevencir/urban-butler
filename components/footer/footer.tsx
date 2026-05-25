@@ -12,7 +12,7 @@ const Footer = () => {
   const pathname = usePathname();
 
   return (
-    <footer className="border-t border-[#E1D2BF] bg-[#FDF8F2]">
+    <footer className="bg-[#FDF8F2]">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-5 sm:px-10 lg:flex-row lg:items-center lg:justify-between xl:max-w-[1820px] xl:px-8 xl:py-5">
         <Link href="/" className="shrink-0">
           <Image

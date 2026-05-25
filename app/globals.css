@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --breakpoint-3xl: 1900px;
+  --breakpoint-3xl: 115rem;
 }
 
 @theme inline {
@@ -130,9 +130,11 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
   }

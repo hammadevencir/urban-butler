@@ -5,14 +5,20 @@ import { HugeiconsIcon } from "@hugeicons/react";
 
 import { Button } from "@/components/ui/button";
 
-const PlanConsultationSection = () => {
+type PlanConsultationSectionProps = {
+  imageSrc?: string;
+};
+
+const PlanConsultationSection = ({
+  imageSrc = "/plan-cons.png",
+}: PlanConsultationSectionProps) => {
   return (
     <section className="border-b border-[#E1D2BF] bg-[#FDF8F2]">
       <div className="mx-auto max-w-7xl px-6 py-10 sm:px-10 xl:max-w-[1820px] xl:px-16">
         <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,489px)_minmax(0,1fr)] lg:gap-10 2xl:grid-cols-[minmax(0,489px)_minmax(0,1fr)_auto] 2xl:gap-14">
           <Image
-            src="/plan-cons.png"
-            alt="Luxury penthouse living room overlooking the New York City skyline"
+            src={imageSrc}
+            alt="Urban Butler plan consultation"
             width={489}
             height={270}
             className="xl:min-w-[489px]"

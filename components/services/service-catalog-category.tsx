@@ -22,16 +22,16 @@ export function ServiceCatalogCategorySection({
 }: ServiceCatalogCategorySectionProps) {
   return (
     <section className={className}>
-      <div className="flex items-center gap-3 border-b border-[#E1D2BF] pb-4">
+      <div className="flex items-center gap-3">
         <Image
           src={category.icon}
           alt=""
-          width={24}
-          height={24}
+          width={28}
+          height={28}
           aria-hidden
           className="shrink-0"
         />
-        <h2 className="text-sm font-semibold uppercase text-primary sm:text-base">
+        <h2 className="text-sm font-semibold uppercase text-primary sm:text-base xl:text-xl">
           {category.title}
         </h2>
       </div>

@@ -10,12 +10,12 @@ export const membershipStripItems = [
     description: "Your privacy is our priority.",
   },
   {
-    icon: "/membership/curated-excellence-icon.svg",
+    icon: "/membership/diamond.svg",
     title: "Curated Excellence",
     description: "Only the best, always.",
   },
   {
-    icon: "/membership/personal-concierge-icon.svg",
+    icon: "/membership/person.svg",
     title: "Personal Concierge",
     description: "A dedicated expert, just for you.",
   },

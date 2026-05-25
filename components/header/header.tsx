@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 
 import { hasDropdown, isLinkActive, navLinks } from "./nav-links";
 import { MobileNav } from "./mobile-nav";
+import { NavDropdownLink } from "./nav-dropdown-link";
 import { NavLink } from "./nav-link";
 
 const Header = () => {
@@ -23,20 +24,23 @@ const Header = () => {
             width={271}
             height={64}
             priority
-            className="h-8 w-auto lg:h-11 xl:h-16"
+            className="h-8 w-auto lg:h-11 2xl:h-16"
           />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">
-          {navLinks.map((link) => (
-            <NavLink
-              key={link.href}
-              href={link.href}
-              label={link.label}
-              hasDropdown={hasDropdown(link)}
-              isActive={isLinkActive(pathname, link.href)}
-            />
-          ))}
+          {navLinks.map((link) =>
+            hasDropdown(link) ? (
+              <NavDropdownLink key={link.href} pathname={pathname} />
+            ) : (
+              <NavLink
+                key={link.href}
+                href={link.href}
+                label={link.label}
+                isActive={isLinkActive(pathname, link.href)}
+              />
+            ),
+          )}
         </nav>
 
         <div className="flex items-center gap-2">

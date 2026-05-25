@@ -15,7 +15,12 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { hasDropdown, isLinkActive, navLinks } from "./nav-links";
+import {
+  forBuildingsDropdownLinks,
+  hasDropdown,
+  isLinkActive,
+  navLinks,
+} from "./nav-links";
 import { MobileNavLink } from "./mobile-nav-link";
 
 type MobileNavProps = {
@@ -46,15 +51,25 @@ export function MobileNav({ pathname }: MobileNavProps) {
         </SheetHeader>
 
         <nav className="flex flex-1 flex-col px-4">
-          {navLinks.map((link) => (
-            <MobileNavLink
-              key={link.href}
-              href={link.href}
-              label={link.label}
-              hasDropdown={hasDropdown(link)}
-              isActive={isLinkActive(pathname, link.href)}
-            />
-          ))}
+          {navLinks.flatMap((link) =>
+            hasDropdown(link)
+              ? forBuildingsDropdownLinks.map((dropdownLink) => (
+                  <MobileNavLink
+                    key={dropdownLink.href}
+                    href={dropdownLink.href}
+                    label={dropdownLink.label}
+                    isActive={isLinkActive(pathname, dropdownLink.href)}
+                  />
+                ))
+              : [
+                  <MobileNavLink
+                    key={link.href}
+                    href={link.href}
+                    label={link.label}
+                    isActive={isLinkActive(pathname, link.href)}
+                  />,
+                ],
+          )}
         </nav>
 
         <SheetFooter className="border-t border-[#E8E0D8]/60 pt-4">

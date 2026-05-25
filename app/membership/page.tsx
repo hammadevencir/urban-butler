@@ -9,7 +9,7 @@ export default function MembershipPage() {
       <MembershipHeroSection />
       <MembershipStripSection />
       <MembershipSection />
-      <PlanConsultationSection />
+      <PlanConsultationSection imageSrc="/membership/plan-cons.png" />
     </div>
   );
 }

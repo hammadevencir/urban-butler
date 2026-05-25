@@ -10,7 +10,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
   return (
     <article className="flex flex-col overflow-hidden rounded-xl border border-[#E1D2BF] bg-[#FDF8F3]">
       <div className="relative">
-        <div className="relative aspect-[4/3] w-full overflow-hidden">
+        <div className="relative aspect-4/3 w-full overflow-hidden">
           <Image
             src={service.image}
             alt={service.title}
