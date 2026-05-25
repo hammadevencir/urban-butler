@@ -13,7 +13,7 @@ const PlanConsultationSection = ({
   imageSrc = "/plan-cons.png",
 }: PlanConsultationSectionProps) => {
   return (
-    <section className="border-b border-[#E1D2BF] bg-[#FDF8F2]">
+    <section className="bg-[#FDF8F2]">
       <div className="mx-auto max-w-7xl px-6 py-10 sm:px-10 xl:max-w-[1820px] xl:px-16">
         <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,489px)_minmax(0,1fr)] lg:gap-10 2xl:grid-cols-[minmax(0,489px)_minmax(0,1fr)_auto] 2xl:gap-14">
           <Image
