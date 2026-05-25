@@ -31,7 +31,7 @@ const HeroSection = () => {
 
           <Button
             asChild
-            className="mt-8 h-auto w-fit rounded-sm px-7 py-3 text-xs font-semibold uppercase tracking-[0.14em]"
+            className="mt-8 h-auto w-fit rounded-sm px-5 py-3 font-semibold uppercase"
           >
             <Link href="/services">View Services</Link>
           </Button>
