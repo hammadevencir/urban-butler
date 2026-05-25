@@ -48,7 +48,7 @@ const HeroSection = () => {
           />
 
           <div
-            className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#FDF8F4] to-transparent lg:hidden"
+            className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-linear-to-b from-[#FDF8F4] to-transparent lg:hidden"
             aria-hidden="true"
           />
         </div>
