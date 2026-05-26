@@ -14,8 +14,8 @@ const ForBuildingsCtaSection = () => {
             src="/for-buildings/partner-cta.png"
             alt="New York City skyline at sunset"
             width={489}
-            height={270}
-            className="w-full rounded-sm xl:min-w-[489px]"
+            height={234}
+            className="w-full rounded-sm xl:min-w-[489px] max-h-[239px]"
           />
 
           <div className="flex flex-col gap-6 lg:gap-8 2xl:contents">
