@@ -10,7 +10,7 @@ import {
 const ForBuildingsIntegrationSection = () => {
   return (
     <section className="border-b border-[#E1D2BF] bg-[#FDF8F2]">
-      <div className="mx-auto max-w-7xl px-6 py-16 sm:px-10 lg:py-20 xl:max-w-[1820px] xl:px-16">
+      <div className="mx-auto max-w-7xl px-6 py-10 sm:px-10 xl:max-w-[1820px] xl:px-16 xl:py-11.5">
         <div className="grid items-start gap-12 lg:grid-cols-2 xl:grid-cols-3 xl:gap-10 3xl:grid-cols-[minmax(0,1fr)_273px_minmax(0,1.2fr)_minmax(240px,393px)] 3xl:gap-8">
           <div className="self-center xl:col-start-1 3xl:col-start-1">
             {forBuildingsIntegrationSteps.map((step, index) => (
