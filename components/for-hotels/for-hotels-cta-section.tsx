@@ -35,7 +35,7 @@ const ForHotelsCtaSection = () => {
 
             <Button
               asChild
-              className="mt-6 h-auto w-full rounded-sm p-4 font-semibold uppercase sm:w-fit"
+              className="mt-6 h-11.5 w-full rounded-sm p-4 font-semibold uppercase sm:w-fit"
             >
               <Link href="/contact" className="inline-flex items-center gap-2">
                 Partner With Us

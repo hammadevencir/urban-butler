@@ -36,7 +36,7 @@ const ForBuildingsCtaSection = () => {
 
             <Button
               asChild
-              className="h-auto w-full rounded-sm p-4 font-semibold uppercase sm:w-fit 2xl:w-auto"
+              className="h-11.5 w-full rounded-sm p-4 font-semibold uppercase sm:w-fit 2xl:w-auto"
             >
               <Link href="/contact" className="inline-flex items-center gap-2">
                 Partner With Us

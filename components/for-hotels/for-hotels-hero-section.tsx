@@ -25,7 +25,7 @@ const ForHotelsHeroSection = () => {
 
           <Button
             asChild
-            className="mt-8 h-auto w-fit rounded-sm p-4 font-semibold uppercase"
+            className="mt-8 h-11.5 w-fit rounded-sm p-4 font-semibold uppercase"
           >
             <Link href="/contact">Partner With Us</Link>
           </Button>
