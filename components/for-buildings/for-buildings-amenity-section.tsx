@@ -25,7 +25,7 @@ const ForBuildingsAmenitySection = () => {
                 key={feature.title}
                 className={
                   index === 0
-                    ? "border-l border-[#E1D2BF] px-4"
+                    ? "px-4"
                     : index === forBuildingsAmenityFeatures.length - 1
                       ? "pl-4"
                       : "px-4"
