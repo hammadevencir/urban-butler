@@ -14,15 +14,15 @@ export function ForHotelsBenefitsItem({ feature }: ForHotelsBenefitsItemProps) {
         <Image
           src={feature.icon}
           alt=""
-          width={48}
-          height={48}
+          width={80}
+          height={80}
           aria-hidden
           className="shrink-0"
         />
       ) : (
         <HugeiconsIcon
           icon={feature.icon}
-          size={48}
+          size={80}
           strokeWidth={1.25}
           className="text-primary"
         />

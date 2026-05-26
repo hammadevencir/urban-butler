@@ -12,10 +12,10 @@ const ForProvidersHeroSection = () => {
             For Service Providers
           </p>
 
-          <h1 className="mt-5 font-heading text-[2.5rem] leading-[1.08] text-[#1E1E1E] sm:text-5xl lg:text-[3.25rem] xl:text-[56px]">
+          <h1 className="mt-5 font-heading text-[2.5rem] leading-[1.08] text-[#1E1E1E] sm:text-5xl lg:text-4xl 2xl:text-[56px]">
             Exceptional clients.
             <br />
-            <span className="italic text-primary 3xl:text-nowrap">Extraordinary opportunity.</span>
+            <span className="italic text-primary xl:text-nowrap">Extraordinary opportunity.</span>
           </h1>
 
           <p className="mt-6 max-w-md text-base text-[#545454] font-medium tracking-tight sm:text-lg lg:text-xl 2xl:text-2xl xl:max-w-[587px]">

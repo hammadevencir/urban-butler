@@ -8,16 +8,16 @@ export function ForProvidersHowItWorksStepItem({
   step,
 }: ForProvidersHowItWorksStepItemProps) {
   return (
-    <div className="mx-auto max-w-[240px] text-center">
-      <span className="font-heading text-3xl font-medium text-primary sm:text-4xl">
+    <div className="mx-auto max-w-[240px] 3xl:max-w-[355px] text-center">
+      <span className="text-xl font-medium text-primary sm:text-2xl 2xl:text-[28px]">
         {step.step}
       </span>
 
-      <p className="mt-3 text-sm font-bold uppercase text-primary sm:text-base">
+      <p className="mt-3 text-sm font-bold uppercase text-primary sm:text-base xl:text-lg">
         {step.title}
       </p>
 
-      <p className="mt-1 text-sm font-medium tracking-tight text-[#545454] sm:text-base">
+      <p className="mt-1 text-sm font-medium tracking-tight 3xl:text-xl text-[#545454] sm:text-base">
         {step.description}
       </p>
     </div>

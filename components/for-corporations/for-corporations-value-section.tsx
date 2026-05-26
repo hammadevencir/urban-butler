@@ -4,13 +4,13 @@ import { forCorporationsValueFeatures } from "./for-corporations-value-data";
 const ForCorporationsValueSection = () => {
   return (
     <section className="border-b border-[#E1D2BF] bg-[#FDF8F2]">
-      <div className="mx-auto max-w-7xl px-6 py-16 sm:px-10 lg:py-20 xl:max-w-[1820px] xl:px-16">
+      <div className="mx-auto max-w-7xl px-6 py-10 sm:px-10 xl:max-w-[1820px] xl:px-11.25">
         <div className="text-center">
-          <p className="text-xs font-bold uppercase text-primary sm:text-sm lg:text-base">
+          <p className="text-xs font-bold uppercase text-primary sm:text-sm lg:text-base xl:text-lg tracking-tight">
             The Value for Your Company
           </p>
 
-          <h2 className="mx-auto mt-4 max-w-4xl font-heading text-[2rem] font-medium leading-[1.15] text-[#1E1E1E] sm:text-2xl">
+          <h2 className="mx-auto mt-4 max-w-4xl font-heading text-[2rem] font-medium leading-[1.15] text-[#1E1E1E] sm:text-2xl xl:text-4xl">
             Happier Employees. Stronger Teams. Better Results.
           </h2>
         </div>

@@ -18,7 +18,7 @@ const HeroSection = () => {
             <span className="italic text-primary">the Friction.</span>
           </h1>
 
-          <span className="mt-5 block h-0.75 w-[73px] rounded-full bg-primary" aria-hidden="true" />
+          <span className="mt-3 block h-0.75 w-[85px] rounded-full bg-primary" aria-hidden="true" />
 
           <p className="mt-6 max-w-md xl:max-w-[587px] text-base leading-relaxed text-[#4A4A4A] sm:text-lg lg:text-xl 2xl:text-2xl">
             Urban Butler removes every demand on your time—quietly, seamlessly

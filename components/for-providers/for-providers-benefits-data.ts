@@ -1,19 +1,15 @@
-import {
-  Calendar01Icon,
-  CustomerServiceIcon,
-  UserCircleIcon,
-} from "@hugeicons/core-free-icons";
+import { CustomerServiceIcon } from "@hugeicons/core-free-icons";
 import type { IconSvgElement } from "@hugeicons/react";
 
 export const forProvidersBenefitsFeatures = [
   {
-    icon: UserCircleIcon,
+    icon: "/for-providers/person.svg",
     title: "Premium Clientele",
     description:
       "Access high-net-worth individuals who value quality and discretion.",
   },
   {
-    icon: Calendar01Icon,
+    icon: "/for-providers/calendar.svg",
     title: "Consistent Demand",
     description:
       "Receive regular requests for your services tailored to your expertise.",
