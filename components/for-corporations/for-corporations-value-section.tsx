@@ -10,7 +10,7 @@ const ForCorporationsValueSection = () => {
             The Value for Your Company
           </p>
 
-          <h2 className="mx-auto mt-4 max-w-4xl font-heading text-[2rem] font-medium leading-[1.15] text-[#1E1E1E] sm:text-4xl">
+          <h2 className="mx-auto mt-4 max-w-4xl font-heading text-[2rem] font-medium leading-[1.15] text-[#1E1E1E] sm:text-2xl">
             Happier Employees. Stronger Teams. Better Results.
           </h2>
         </div>

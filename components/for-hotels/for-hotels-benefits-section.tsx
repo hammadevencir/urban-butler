@@ -5,7 +5,7 @@ const ForHotelsBenefitsSection = () => {
   return (
     <section className="border-b border-[#E1D2BF] bg-[#FDF8F2]">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:px-10 lg:py-20 xl:max-w-[1820px] xl:px-16">
-        <h2 className="mx-auto max-w-4xl text-center font-heading text-[2rem] font-medium leading-[1.15] text-[#1E1E1E] sm:text-4xl">
+        <h2 className="mx-auto max-w-4xl text-center font-heading text-[2rem] font-medium leading-[1.15] text-[#1E1E1E] sm:text-2xl">
           A luxury experience your guests will remember—{" "}
           <span className="text-primary">and you&apos;ll be recognized for.</span>
         </h2>

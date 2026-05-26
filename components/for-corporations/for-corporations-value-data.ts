@@ -1,6 +1,4 @@
 import {
-  Award01Icon,
-  ChartIncreaseIcon,
   FavouriteIcon,
   StarIcon,
   UserGroupIcon,
@@ -27,19 +25,19 @@ export const forCorporationsValueFeatures = [
       "Reduce stress and simplify life with trusted help for everyday needs.",
   },
   {
-    icon: Award01Icon,
+    icon: "/membership/diamond.svg",
     title: "Attract Top Talent",
     description:
       "Stand out with a modern, premium benefit that today's professionals value.",
   },
   {
-    icon: ChartIncreaseIcon,
+    icon: "/for-hotels/trend.svg",
     title: "Save Time & Resources",
     description:
       "No need to build or manage multiple vendor relationships—we handle it all.",
   },
 ] as const satisfies ReadonlyArray<{
-  icon: IconSvgElement;
+  icon: IconSvgElement | string;
   title: string;
   description: string;
 }>;

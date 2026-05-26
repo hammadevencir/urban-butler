@@ -1,8 +1,6 @@
 import {
   Calendar01Icon,
   CustomerServiceIcon,
-  Diamond01Icon,
-  SecurityCheckIcon,
   UserCircleIcon,
 } from "@hugeicons/core-free-icons";
 import type { IconSvgElement } from "@hugeicons/react";
@@ -21,12 +19,12 @@ export const forProvidersBenefitsFeatures = [
       "Receive regular requests for your services tailored to your expertise.",
   },
   {
-    icon: SecurityCheckIcon,
+    icon: "/for-hotels/shield.svg",
     title: "Reliable Payments",
     description: "We handle payments promptly and securely—every time.",
   },
   {
-    icon: Diamond01Icon,
+    icon: "/membership/diamond.svg",
     title: "Long-Term Partnerships",
     description: "Build lasting relationships and grow your business with us.",
   },
@@ -36,7 +34,7 @@ export const forProvidersBenefitsFeatures = [
     description: "Our team is here to support you every step of the way.",
   },
 ] as const satisfies ReadonlyArray<{
-  icon: IconSvgElement;
+  icon: IconSvgElement | string;
   title: string;
   description: string;
 }>;

@@ -15,21 +15,21 @@ const ForHotelsCtaSection = () => {
   return (
     <section className="border-b border-[#E1D2BF] bg-[#FDF8F2]">
       <div className="mx-auto max-w-7xl px-6 py-10 sm:px-10 xl:max-w-[1820px] xl:px-16">
-        <div className="grid items-center gap-10 lg:grid-cols-2 xl:grid-cols-[minmax(0,489px)_minmax(0,1fr)_minmax(280px,360px)] xl:gap-12">
+        <div className="grid items-center gap-10 lg:grid-cols-2 xl:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)_minmax(0,0.9fr)] xl:gap-6 2xl:gap-8 3xl:grid-cols-[minmax(0,489px)_minmax(0,1fr)_minmax(280px,360px)] 3xl:gap-12">
           <Image
-            src="/for-hotels/partner-cta.png"
+            src="/for-hotels/fh2.png"
             alt="Luxury coastal resort at sunset"
             width={489}
             height={270}
-            className="w-full rounded-sm lg:col-span-2 xl:col-span-1 xl:min-w-[489px]"
+            className="w-full min-w-0 rounded-sm lg:col-span-2 xl:col-span-1"
           />
 
-          <div className="max-w-xl">
-            <p className="text-xs font-bold uppercase text-primary sm:text-sm lg:text-base">
+          <div className="min-w-0 max-w-xl lg:max-w-none">
+            <p className="text-xs font-bold uppercase text-primary sm:text-sm lg:text-base 2xl:text-lg tracking-tight">
               Let&apos;s create exceptional guest experiences, together.
             </p>
 
-            <h2 className="mt-3 font-heading text-[1.75rem] font-medium leading-[1.15] text-[#1D1D1D] sm:text-3xl lg:text-4xl">
+            <h2 className="mt-3 font-heading text-[1.75rem] font-medium leading-[1.15] text-[#1D1D1D] sm:text-3xl 2xl:text-4xl">
               Partner with Urban Butler and redefine the guest experience.
             </h2>
 
@@ -44,12 +44,12 @@ const ForHotelsCtaSection = () => {
             </Button>
           </div>
 
-          <div className="max-w-sm lg:col-span-2 xl:col-span-1">
-            <p className="text-base font-medium tracking-tight text-[#545454] sm:text-lg">
+          <div className="min-w-0 max-w-sm lg:max-w-none">
+            <p className="text-base font-medium tracking-tight text-[#545454] sm:text-lg xl:text-lg 2xl:text-xl">
               Get started with a custom solution tailored to your property.
             </p>
 
-            <ul className="mt-5 space-y-4">
+            <ul className="mt-4 flex flex-col gap-3">
               {forHotelsCtaBenefits.map((benefit) => (
                 <li key={benefit} className="flex items-start gap-3">
                   <Image
@@ -60,7 +60,7 @@ const ForHotelsCtaSection = () => {
                     aria-hidden
                     className="mt-0.5 shrink-0"
                   />
-                  <span className="text-sm font-medium tracking-tight text-[#545454] sm:text-base">
+                  <span className="text-sm font-semibold tracking-tight text-[#545454] sm:text-base">
                     {benefit}
                   </span>
                 </li>
