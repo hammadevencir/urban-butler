@@ -20,7 +20,7 @@ export function NavLink({ href, label, isActive }: NavLinkProps) {
       <span>{label}</span>
       <span
         className={cn(
-          "h-px w-full bg-primary transition-opacity",
+          "h-0.5 w-full bg-primary transition-opacity",
           isActive ? "opacity-100" : "opacity-0 group-hover:opacity-40",
         )}
       />
