@@ -13,14 +13,16 @@ const ServiceCatalogSection = () => {
           <ServiceCatalogCategorySection key={category.slug} category={category} />
         ))}
 
-        <div className="grid gap-14 lg:grid-cols-5 lg:gap-8 xl:gap-12">
+        <div className="grid items-stretch gap-14 xl:grid-cols-5 xl:gap-8 2xl:gap-12">
           <ServiceCatalogCategorySection
             category={serviceCatalogWellnessCategory}
-            className="lg:col-span-2"
+            className="xl:col-span-2"
+            stretchHeight
           />
           <ServiceCatalogCategorySection
             category={serviceCatalogTravelCategory}
-            className="lg:col-span-3"
+            className="xl:col-span-3"
+            stretchHeight
           />
         </div>
       </div>

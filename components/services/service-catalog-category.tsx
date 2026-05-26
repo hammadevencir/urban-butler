@@ -7,21 +7,23 @@ import { ServiceCatalogItemCard } from "./service-catalog-item-card";
 
 const columnClasses = {
   2: "sm:grid-cols-2",
-  3: "sm:grid-cols-2 lg:grid-cols-3",
+  3: "sm:grid-cols-2 xl:grid-cols-3",
   5: "sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5",
 } as const;
 
 type ServiceCatalogCategorySectionProps = {
   category: ServiceCatalogCategory;
   className?: string;
+  stretchHeight?: boolean;
 };
 
 export function ServiceCatalogCategorySection({
   category,
   className,
+  stretchHeight = false,
 }: ServiceCatalogCategorySectionProps) {
   return (
-    <section className={className}>
+    <section className={cn(stretchHeight && "flex h-full flex-col", className)}>
       <div className="flex items-center gap-3">
         <Image
           src={category.icon}
@@ -38,7 +40,8 @@ export function ServiceCatalogCategorySection({
 
       <div
         className={cn(
-          "mt-6 grid grid-cols-1 gap-6",
+          "mt-6 grid min-w-0 grid-cols-1 gap-4 sm:gap-5 xl:gap-6",
+          stretchHeight && "flex-1 auto-rows-fr items-stretch",
           columnClasses[category.columns],
         )}
       >
