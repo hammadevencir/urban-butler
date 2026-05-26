@@ -35,10 +35,14 @@ export const forProvidersCategories = [
     title: "& More",
     isMore: true,
   },
-] as const satisfies ReadonlyArray<{
-  title: string;
-  image?: string;
-  isMore?: boolean;
-}>;
+] as const satisfies ReadonlyArray<
+  | { title: string; image: string }
+  | { title: string; isMore: true }
+>;
 
 export type ForProvidersCategory = (typeof forProvidersCategories)[number];
+
+export type ForProvidersCategoryWithImage = Extract<
+  ForProvidersCategory,
+  { image: string }
+>;
