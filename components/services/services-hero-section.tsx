@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const ServicesHeroSection = () => {
   return (
     <section className="overflow-hidden border-b border-[#E1D2BF] bg-[#FDF8F2]">
-      <div className="grid h-full md:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] 2xl:grid-cols-[820px_1fr] 2xl:min-h-[638px] xl:max-h-[638px]">
+      <div className="grid h-full md:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] 2xl:grid-cols-[820px_1fr] xl:min-h-[600px] 2xl:min-h-[638px] xl:max-h-[638px]">
         <div className="flex flex-col justify-center px-6 py-14 sm:px-10 sm:py-16 lg:px-14 lg:py-16 3xl:px-20 3xl:pl-28">
           <p className="text-xs font-medium uppercase text-primary sm:text-sm lg:text-base xl:text-lg 3xl:text-xl">
             Our Services
@@ -19,7 +19,7 @@ const ServicesHeroSection = () => {
             to perfection.
           </h1>
 
-          <span className="mt-5 block h-0.75 rounded-full w-12 xl:w-[73px] bg-primary" aria-hidden="true" />
+          <span className="mt-3 block h-0.75 rounded-full w-12 xl:w-[73px] bg-primary" aria-hidden="true" />
 
           <p className="mt-6 max-w-md text-base leading-relaxed text-[#4E4E4E] font-medium tracking-tight sm:text-lg lg:text-xl 2xl:text-2xl xl:max-w-[587px]">
             From everyday essentials to exceptional experiences, Urban Butler
