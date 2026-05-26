@@ -8,7 +8,7 @@ type MembershipStripItemCardProps = {
 
 export function MembershipStripItemCard({ item }: MembershipStripItemCardProps) {
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex items-start gap-3">
       <Image
         src={item.icon}
         alt=""
