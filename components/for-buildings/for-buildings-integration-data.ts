@@ -25,16 +25,6 @@ export const forBuildingsIntegrationFeatures = [
   "Data Insights & Resident Satisfaction Reporting",
 ] as const;
 
-export const forBuildingsResidentAppCategories = [
-  { label: "Home", icon: "/services/home-icon.svg" },
-  { label: "Personal", icon: "/services/personal-icon.svg" },
-  { label: "Experiences", icon: "/services/experiences-icon.svg" },
-  { label: "Wellness", icon: "/services/wellness-icon.svg" },
-  { label: "Travel", icon: "/services/travel-icon.svg" },
-  { label: "Business", icon: "/services/person-icon.svg" },
-  { label: "Gifts & More", icon: "/services/star-icon.svg" },
-] as const;
-
 export const forBuildingsIntegrationTestimonial = {
   quote:
     "Urban Butler has become one of the most valued amenities in our building. Our residents love the convenience, and we love the impact it has on retention.",

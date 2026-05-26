@@ -5,9 +5,9 @@ const ForBuildingsAmenitySection = () => {
   return (
     <section className="border-b border-[#E1D2BF] bg-[#FDF8F2]">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:px-10 lg:py-20 xl:max-w-[1820px] xl:px-16">
-        <div className="grid items-start lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
-          <div className="max-w-xl">
-            <h2 className="font-heading text-[2rem] max-w-lg font-medium leading-[1.15] text-[#1E1E1E] sm:text-4xl">
+        <div className="grid items-start gap-12 min-[1700px]:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] min-[1700px]:gap-10">
+          <div className="w-full min-[1700px]:max-w-xl">
+            <h2 className="font-heading text-[2rem] font-medium leading-[1.15] text-[#1E1E1E] sm:text-4xl min-[1700px]:max-w-lg">
               A modern amenity for the modern resident.
             </h2>
 
@@ -19,16 +19,16 @@ const ForBuildingsAmenitySection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:divide-x w-full lg:divide-[#E1D2BF]">
+          <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 lg:gap-0 lg:grid-cols-4 min-[1700px]:gap-0 lg:divide-x lg:divide-[#E1D2BF]">
             {forBuildingsAmenityFeatures.map((feature, index) => (
               <div
                 key={feature.title}
                 className={
                   index === 0
-                    ? "lg:px-8 border-l"
+                    ? "border-l border-[#E1D2BF] px-4"
                     : index === forBuildingsAmenityFeatures.length - 1
-                      ? "lg:pl-8"
-                      : "lg:px-8"
+                      ? "pl-4"
+                      : "px-4"
                 }
               >
                 <ForBuildingsAmenityItem feature={feature} />

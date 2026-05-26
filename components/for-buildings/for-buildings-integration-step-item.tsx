@@ -10,25 +10,26 @@ export function ForBuildingsIntegrationStepItem({
   isLast,
 }: ForBuildingsIntegrationStepItemProps) {
   return (
-    <div className="flex gap-4">
-      <div className="flex flex-col items-center">
-        <div className="flex size-10 shrink-0 items-center justify-center rounded-full border-2 border-primary bg-[#F3EBE0]">
-          <span className="text-sm font-semibold text-primary">{step.number}</span>
+    <div className="flex items-stretch gap-4">
+      <div className="flex w-11 shrink-0 flex-col items-center">
+        <div className="flex size-11 3xl:size-13 shrink-0 items-center justify-center rounded-full border border-[#E1D2BF] bg-[#FDF8F2]">
+          <span className="text-base font-medium text-[#545454]">
+            {step.number}
+          </span>
         </div>
 
         {!isLast ? (
-          <span
-            className="mt-2 w-px flex-1 min-h-10 bg-primary/35"
-            aria-hidden="true"
-          />
+          <div className="flex flex-col h-full items-center justify-center">
+            <span className="w-px flex-1 max-h-[26px] bg-primary" aria-hidden="true" />
+          </div>
         ) : null}
       </div>
 
-      <div className={isLast ? "pb-0" : "pb-8"}>
-        <h3 className="text-xs font-bold uppercase text-primary sm:text-sm">
+      <div className={isLast ? "pt-2.5" : "pb-6"}>
+        <h3 className="text-sm lg:text-base 3xl:text-lg font-bold uppercase text-primary">
           {step.title}
         </h3>
-        <p className="mt-1 text-sm font-medium tracking-tight text-[#545454] sm:text-base">
+        <p className="mt-1 text-sm font-medium text-[#545454] lg:text-base 3xl:text-xl max-w-[337px] tracking-tight">
           {step.description}
         </p>
       </div>

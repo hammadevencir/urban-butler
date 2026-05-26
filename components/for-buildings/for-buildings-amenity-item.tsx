@@ -1,4 +1,4 @@
-import { HugeiconsIcon } from "@hugeicons/react";
+import Image from "next/image";
 
 import type { ForBuildingsAmenityFeature } from "./for-buildings-amenity-data";
 
@@ -10,12 +10,14 @@ export function ForBuildingsAmenityItem({
   feature,
 }: ForBuildingsAmenityItemProps) {
   return (
-    <div className="flex flex-col items-center text-center w-full min-w-[200px]">
-      <HugeiconsIcon
-        icon={feature.icon}
-        size={80}
-        strokeWidth={1}
-        className="text-primary"
+    <div className="flex w-full min-w-0 flex-col items-center text-center">
+      <Image
+        src={feature.icon}
+        alt=""
+        width={56}
+        height={56}
+        aria-hidden
+        className="shrink-0"
       />
 
       <h3 className="mt-4 text-xs font-bold uppercase text-primary sm:text-sm xl:text-base">
