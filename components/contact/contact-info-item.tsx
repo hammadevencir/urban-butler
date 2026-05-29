@@ -45,7 +45,7 @@ export function ContactInfoItemCard({ item }: ContactInfoItemCardProps) {
     return (
       <a
         href={item.href}
-        className="flex items-start gap-4 border-b border-[#E1D2BF] py-6 3xl:py-8 transition-colors last:border-b-0 hover:text-primary"
+        className="flex items-start gap-4 border-b border-[#E1D2BF] py-6 3xl:py-8 transition-colors last:border-b-0 hover:text-primary max-w-[446px]"
       >
         {content}
       </a>
@@ -53,7 +53,7 @@ export function ContactInfoItemCard({ item }: ContactInfoItemCardProps) {
   }
 
   return (
-    <div className="flex items-start gap-4 border-b border-[#E1D2BF] py-6 3xl:py-8 last:border-b-0">
+    <div className="flex items-start gap-4 border-b border-[#E1D2BF] py-6 3xl:py-8 last:border-b-0 max-w-[446px]">
       {content}
     </div>
   );
