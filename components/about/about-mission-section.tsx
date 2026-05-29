@@ -30,8 +30,8 @@ const AboutMissionSection = () => {
                 index === 0
                   ? "xl:pr-6"
                   : index === aboutMissionValues.length - 1
-                    ? "xl:pl-6"
-                    : "xl:px-6"
+                    ? "xl:pl-4"
+                    : "xl:px-4"
               }
             >
               <AboutMissionValueItem value={value} />

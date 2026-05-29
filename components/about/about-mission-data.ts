@@ -1,43 +1,30 @@
-import {
-  Clock01Icon,
-  Diamond01Icon,
-  GlobeIcon,
-  SecurityCheckIcon,
-  UserCircleIcon,
-} from "@hugeicons/core-free-icons";
-import type { IconSvgElement } from "@hugeicons/react";
-
 export const aboutMissionValues = [
   {
-    icon: Clock01Icon,
+    icon: "/about/1.svg",
     title: "Your Time Is Precious",
     description: "We protect it by taking everything off your plate.",
   },
   {
-    icon: SecurityCheckIcon,
+    icon: "/about/2.svg",
     title: "Discretion Is Our Standard",
     description:
       "Your privacy is protected with the highest level of confidentiality.",
   },
   {
-    icon: Diamond01Icon,
+    icon: "/about/3.svg",
     title: "Quality Is Non-Negotiable",
     description: "We deliver only the best—every single time.",
   },
   {
-    icon: UserCircleIcon,
+    icon: "/about/4.svg",
     title: "Human, Personal, Reliable",
     description: "Real people. Real relationships. Always here for you.",
   },
   {
-    icon: GlobeIcon,
+    icon: "/about/5.svg",
     title: "Globally Connected",
     description: "Local expertise. Global access. Anywhere, anytime.",
   },
-] as const satisfies ReadonlyArray<{
-  icon: IconSvgElement;
-  title: string;
-  description: string;
-}>;
+] as const;
 
 export type AboutMissionValue = (typeof aboutMissionValues)[number];
