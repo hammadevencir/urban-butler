@@ -26,7 +26,7 @@ const ForCorporationsHowItWorksSection = () => {
           <div className="min-w-0 overflow-x-auto pb-2 3xl:overflow-visible">
             <div className="flex w-max min-w-full flex-nowrap items-center justify-center gap-2 sm:gap-3 3xl:w-auto 3xl:justify-between">
               {forCorporationsHowItWorksSteps.map((step, index) => (
-                <div key={step.step} className="contents">
+                <div key={step.step} className="flex items-start">
                   <ForCorporationsHowItWorksStepItem step={step} />
 
                   {index < forCorporationsHowItWorksSteps.length - 1 ? (
@@ -35,9 +35,9 @@ const ForCorporationsHowItWorksSection = () => {
                         icon={ChevronRight}
                         size={32}
                         strokeWidth={1.5}
-                        className="shrink-0 text-primary 3xl:hidden"
+                        className="shrink-0 text-primary self-center 3xl:hidden"
                       />
-                      <StepArrow className="hidden h-3 w-20 shrink-0 text-primary 3xl:block" />
+                      <StepArrow className="hidden self-center h-3 w-20 shrink-0 text-primary 3xl:block" />
                     </>
                   ) : null}
                 </div>
