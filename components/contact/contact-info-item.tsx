@@ -1,22 +1,6 @@
-"use client";
-
-import {
-  Building01Icon,
-  CallRinging01Icon,
-  Mail01Icon,
-  WhatsappIcon,
-} from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
-import type { IconSvgElement } from "@hugeicons/react";
+import Image from "next/image";
 
 import type { ContactInfoItem } from "./contact-message-data";
-
-const contactIcons: Record<ContactInfoItem["label"], IconSvgElement> = {
-  "Call Us": CallRinging01Icon,
-  "Email Us": Mail01Icon,
-  WhatsApp: WhatsappIcon,
-  Office: Building01Icon,
-};
 
 type ContactInfoItemCardProps = {
   item: ContactInfoItem;
@@ -25,17 +9,17 @@ type ContactInfoItemCardProps = {
 export function ContactInfoItemCard({ item }: ContactInfoItemCardProps) {
   const content = (
     <>
-      <div className="flex size-12 shrink-0 items-center justify-center rounded-full border border-primary/30 bg-white">
-        <HugeiconsIcon
-          icon={contactIcons[item.label]}
-          size={22}
-          strokeWidth={1.25}
-          className="text-primary"
-        />
-      </div>
+      <Image
+        src={item.icon}
+        alt=""
+        width={56}
+        height={56}
+        aria-hidden
+        className="shrink-0"
+      />
 
       <div>
-        <p className="text-xs font-bold uppercase text-primary sm:text-sm">
+        <p className="text-xs font-bold uppercase text-primary sm:text-sm 2xl:text-base">
           {item.label}
         </p>
 
@@ -44,12 +28,12 @@ export function ContactInfoItemCard({ item }: ContactInfoItemCardProps) {
             <p className="mt-1 whitespace-pre-line text-sm font-medium tracking-tight text-[#545454] sm:text-base">
               {item.detail}
             </p>
-            <p className="mt-1 text-sm font-medium tracking-tight text-[#545454] sm:text-base">
+            <p className="text-sm font-medium tracking-tight text-[#545454] sm:text-base">
               {item.subdetail}
             </p>
           </>
         ) : (
-          <p className="mt-1 text-sm font-medium tracking-tight text-[#545454] sm:text-base">
+          <p className="mt-1 text-sm font-medium tracking-tight leading-snug text-[#545454] sm:text-base">
             {item.detail}
           </p>
         )}
@@ -61,7 +45,7 @@ export function ContactInfoItemCard({ item }: ContactInfoItemCardProps) {
     return (
       <a
         href={item.href}
-        className="flex items-start gap-4 border-b border-[#E1D2BF] py-6 transition-colors last:border-b-0 hover:text-primary"
+        className="flex items-start gap-4 border-b border-[#E1D2BF] py-6 3xl:py-8 transition-colors last:border-b-0 hover:text-primary"
       >
         {content}
       </a>
@@ -69,7 +53,7 @@ export function ContactInfoItemCard({ item }: ContactInfoItemCardProps) {
   }
 
   return (
-    <div className="flex items-start gap-4 border-b border-[#E1D2BF] py-6 last:border-b-0">
+    <div className="flex items-start gap-4 border-b border-[#E1D2BF] py-6 3xl:py-8 last:border-b-0">
       {content}
     </div>
   );
